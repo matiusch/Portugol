@@ -3,36 +3,33 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro valorX
+		inteiro valorN,cont, valorX
+		inteiro valorPositivo=0,valorNegativo=0
 
-		escreva("informe um valor inteiro: ")
-		leia(valorX)
+		
 
+		leia(valorN)
 
-      para(inteiro cont=0;cont<6;cont++){
-       	
-		se(valorX % 2 == 0){
-           
-			valorX++
-		}senao{
-			
-			valorX = valorX + 2
-			
+		para(cont = 0; cont<valorN;cont++){
+			leia(valorX)
+
+			se(valorX >=10 e valorX<=20){
+				valorPositivo++
+			}senao{
+				valorNegativo++
+			}
 		}
 
-			escreva(valorX,"\n")
-			
-		}
-        
+		escreva(valorPositivo, " in\n")
+		escreva(valorNegativo, " out")
 	}
-	
 }
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 246; 
+ * @POSICAO-CURSOR = 336; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
